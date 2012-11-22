@@ -1,0 +1,40 @@
+<div id="footer_1">
+	<div id="footer_1_div">
+		<div class="col_1">
+			<h1>About</h1>
+			<%= link_to("Team","#",:class=>"footer1")%>
+			<%= link_to("Press","#",:class=>"footer1")%>
+			<%= link_to("Contact Us","#",:class=>"footer1")%>
+		</div>
+		<div class="col_2">
+			<h1>AwayFind</h1>
+			<%= link_to("Product Tour","#",:class=>"footer1")%>
+			<%= link_to("Who Uses AwayFind?","#",:class=>"footer1")%>
+			<%= link_to("For Businesses","#",:class=>"footer1")%>
+			<%= link_to("Log In","#",:class=>"footer1")%>
+			<%= link_to("Plans &amp; Pricing","#",:class=>"footer1")%>
+		</div>
+		<div id="col_3">
+			<h1>Community &amp; Support</h1>
+			<%= link_to("Blog","#",:class=>"footer1")%>
+			<%= link_to("Forum","#",:class=>"footer1")%>
+			<%= link_to("Terms","#",:class=>"footer1")%>
+			<%= link_to("Privacy","#",:class=>"footer1")%>
+			<%= link_to("Support &amp; FAQ","#",:class=>"footer1")%>
+		</div>
+		<div id="col_4">
+			<h1>Social</h1>
+			<div id="facebook_share">
+				<iframe src="https://www.facebook.com/plugins/like.php?href=www.awayfind.com&amp;layout=standard&amp;show_faces=false&amp;width=325&amp;action=like&amp;font&amp;colorscheme=dark&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:325px; height:35px;" allowTransparency="true"></iframe>
+			</div>
+			<div id="twitter_share">
+				<img class="twitter_share_img" src=<%= image_path("Twitter_share_button.png")%>/>
+				<div class="twitter_share_desc">
+					<%=link_to("@Awayfind","http://twitter.com/awayfind",:target=>"_blank")%> on Twitter
+					<br />
+					<span><span id="followers_number"></span> followers</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

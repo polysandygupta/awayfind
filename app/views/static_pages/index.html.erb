@@ -1,0 +1,93 @@
+<div id="heading">
+		<%= render 'layouts/header'%>
+		<div id="header_div">
+			<h1>Checking email every 5 minutes? Stop!</h1>
+			<h2>Get <span>AWAY</span> from your inbox — let urgent emails cut
+			<br>
+			through the clutter and <span>FIND</span> you...instantly.</h2>
+			<p>
+				When you receive a timely message,
+				<br>
+				AwayFind will notify you on your mobile
+				<br>
+				device with an SMS, Voice call or even
+				<br>
+				our iPhone &amp; Android apps
+			</p>
+
+			<input type="text" id="email_address" name="email_address" value="enter your email" onfocus="if (this.value == 'enter your email') this.value='';" onblur="if (this.value == '') this.value='enter your email';" style="color: rgb(102, 102, 102); float: left; font-size: 14px; left: 15px; padding: 5px 4px; border:1px solid rgba(0,0,0,0.5); border-radius:4px; box-shadow: 1px 1px 1px rgba(0,0,0,0.3) inset; position: relative; top: 30px; width: 235px; word-spacing: 0pt;">
+			<input id="signup" class="button" alt="Try it Free: no credit card required, setup in 2 minutes" src=<%= image_path("green_button_03.png") %> style="top: 64px; left: -248px;" type="image">
+			<p class="" style="font-weight: normal; color: rgb(255, 255, 255); text-shadow: none; font-size: 11px; margin: 0pt; padding: 0pt; position: relative; top: 62px; left: 18px;">
+				No credit card required. Setup in 2 minutes.
+			</p>
+
+			<!-- <input id="signup" class="button" alt="Try it Free: no credit card required, setup in 2 minutes" src="/images/new_home/button2.png" type="image" /> -->
+			<%= link_to image_tag("iphone.png",:border=>0, :alt=>"Get away find for your iphone",:title=>"Get away find for your iphone") %>
+		</div>
+	</div>
+<div id="spacing">
+	&nbsp;
+</div>
+
+<div id="body_container">
+	<div id="body" class="ceebox mixed" style="height: 350px;">
+		<h1>AwayFind users have escaped from <span class="unimportant_emails">109,375,394</span> unimportant emails... Meet a few below!</h1>
+		<div class="testimony">
+			<a href="http://www.youtube.com/watch?v=J2PK3Mj11TQ" rel="width:480" title="Patrick Rhone"><img src=<%= image_path("Patrick.png") %> alt="Patrick Rhone" /></a>
+			<div class="title">
+				<strong>Patrick Rhone</strong>, <small>Machine Methods</small>
+			</div>
+			<div class="phrase">
+				I'm not tied to my email.
+				<br />
+				The important stuff gets
+				<br />
+				through to me.
+			</div>
+		</div>
+		<div class="testimony">
+			<a href="http://www.youtube.com/watch?v=qvbOrm2LdBk" rel="width:480" title="Susan Murphy"><img src=<%= image_path("Susan.png")%> alt="Susan Murphy" /></a>
+			<div class="title">
+				<strong>Susan Murphy</strong>, <small>Jester Creative</small>
+			</div>
+			<div class="phrase">
+				It enabled me to clear my
+				<br />
+				mind from what's happening
+				<br />
+				in my inbox.
+			</div>
+		</div>
+		<div class="testimony">
+			<img src=<%= image_path("Merlin.png") %> alt="Merlin Mann" /></a>
+			<div class="title">
+				<strong>Merlin Mann</strong>, <small>author of Inbox Zero</small>
+			</div>
+			<div class="phrase">
+				It gives me confidence to
+				<br />
+				do what I need without
+				<br />
+				hovering over my inbox 24/7
+				<br />
+				&mdash; I highly recommend.
+			</div>
+		</div>
+		<div class="customers">
+			<div class="title">
+				Our customers are at some cool companies
+			</div>
+			<%= image_tag("companies.png", :alt=>"Companies") %>
+		</div>
+	</div>
+	<div style="display: none;">
+		<div id="how_it_works"></div>
+		<div id="escape_button_canvas">
+			<%= link_to image_tag("escape_button.png", :class=>"signup_trigger", :alt=>"Escape your inbox") %>
+			Get all the features free for 30 days.
+		</div>
+	</div>
+	<div id="press">
+		<%= link_to image_tag("press.png", :alt=>"Press companies") %>
+	</div>
+</div>
