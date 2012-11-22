@@ -1,4 +1,6 @@
 Awayfind::Application.routes.draw do
+  get "user/new"
+
   get "static_pages/index"
 
   # The priority is based upon order of creation:
