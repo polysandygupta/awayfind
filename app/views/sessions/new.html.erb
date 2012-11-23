@@ -1,0 +1,35 @@
+<%= stylesheet_link_tag params[:controller] %>
+<body>
+	<%= render 'layouts/header'%>
+	<div id="heading">
+		<h1>Log In <span>Welcome back. Sign in to plan your escape from email.</span></h1>
+	</div>
+	<div id="content">
+		<div id="col_1">
+			<h3>Login to AwayFind</h3>
+			<div class="bluebox">
+				<form method="post" action="check" id="login_form" onsubmit="return check_login();">
+					<input type="hidden" name="__form_processor" value="login" />
+					<input type="text" class="email" name="username" id="login_email" value="email address" onchange="get_login_url();" onfocus="this.value=(this.value=='email address')? '':this.value;" onblur="this.value=(this.value=='')?'email address':this.value;" />
+					<input type="password" class="password" name="password" id="password" value="password" onfocus="if (this.value=='password') { this.value=''; }" onblur="if (this.value=='') { this.value='password'; }" />
+					<input type="submit" class="submit_buttons login_button" name="login" id="login_button" value="LOGIN" />
+					<input type="hidden" name="external" value="1" />
+					<a href="javascript:showForgot()" id="forgot_link">Forgot your password?</a>
+				</form>
+
+				<form method="post" action="check" id="forgot_password" onsubmit="return check_forgot();" style="display:none;">
+					<p>
+						No problem. Enter your email to reset your password
+					</p>
+					<input type="text" class="email" name="email" id="reset_email" value="email address" onfocus="this.value=(this.value=='email address')? '':this.value;" onblur="this.value=(this.value=='')?'email address':this.value;" />
+					<input type="hidden" name="username" id="reset_username" value="" />
+					<input type="hidden" name="__form_processor" value="forgot_password" />
+					<input type="hidden" name="external" value="1" />
+					<input type="submit" class="submit_buttons send_button" name="reset_password" id="reset_password" value="SEND" />
+				</form>
+			</div>
+			<p>
+				Don't have an account? <a href="register_user.php?referrer=aHR0cDovL3d3dy5hd2F5ZmluZC5jb20v" style="font-size:12px;">Sign up</a> today!
+			</p>
+		</div>
+	</div>

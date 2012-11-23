@@ -1,0 +1,73 @@
+<%= stylesheet_link_tag params[:controller] %>
+<body class="body_register">
+	<div id="navigation" style="margin:24px auto 0;">
+		<div id="navlogo">
+			<%= image_tag("navigation_logo_alpha.png", :alt=>"AwayFind", :border=>"0") %>
+		</div>
+	</div>
+	<div id="maincontentin_register" class="register">
+		<div class="content">
+			<h1>Thanks for choosing AwayFind</h1>
+			<h3>Sign up for free and you'll get our premium features for 30 days!</h3>
+			<div id="section">
+				<div class="left">
+					<%= image_tag("register_heading_arrow.png", :alt=>"Create Your Profile")%>
+					<span>Create Your Profile</span>
+				</div>				<div class="right">
+					<form name="register_user" id="register_user" method="post" action="/users">
+						<!-- BEGIN Main form -->
+						<div id="email_box" class="box" style="margin-top: 20px; padding-bottom: 0;">
+							<label class="main_label" for="email">Your email</label>
+							<input type="text" name="email" class="main_input" id="email" value="" />
+							<img id="email_error_icon" src=<%= image_path("register_error_x.png")%> alt='Error' class="error_icon" />
+							<div class="small_description">
+								This is the email account you want to get away from
+							</div>
+							<div id="email_error_message" class="error_message"></div>
+						</div>						<div  id="name_box" class="box">
+							<label class="main_label" for="name_first">Your name</label>
+							<table class="name_table">
+								<tr>
+									<td style="width: 150px;">
+									<input type="text" name="name_first" class="main_input" id="name_first" value="" />
+									<div class="small_description">
+										First name
+									</div></td>
+									<td>
+									<input type="text" name="name_last" class="main_input" id="name_last" value="" />
+									<img id="name_error_icon" src=<%= image_path("register_error_x.png")%> alt='Error' class="error_icon" />
+									<div class="small_description">
+										Last name
+									</div></td>
+								</tr>
+							</table>
+							<div id="name_error_message" class="error_message">
+								These are required fields
+							</div>
+						</div>						<div id="company_box" class="box">
+							<label class="main_label" for="company">Company <span style="font-weight: normal;">(optional)</span></label>
+							<input type="text" name="company" class="main_input" id="company" value=""/>
+							<img id="company_error_icon" src='/admin/images/register/register_error_x.png' alt='Error' class="error_icon" />
+							<div id="company_error_message" class="error_message"></div>
+						</div>						<div id="password_box" class="box">
+							<label class="main_label" for="password">Choose a password</label>
+							<input type="password" name="password" class="main_input" id='password' value="" />
+							<img id="password_error_icon" src='/admin/images/register/register_error_x.png' alt='Error' class="error_icon" />
+							<div id="password_error_message" class="error_message"></div>
+						</div>						<div id="password_confirm_box" class="box">
+							<label class="main_label" for="password_confirm">Retype password</label>
+							<input type="password" name="password_confirm" class="main_input" id="password_confirm" value="" />
+							<img id="password_confirm_error_icon" src='/admin/images/register/register_error_x.png' alt='Error' class="error_icon" />
+							<div id="password_confirm_error_message" class="error_message"></div>
+						</div>						<div id="tos_box" class="white_box">
+							<div>
+								<input class="submit_button_create submit_button" alt="Create my Account" type="submit" name="submit" value="Create My Account"/>
+							</div>
+						</div>											</form>
+					<!-- END Register user form -->
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear"></div><!-- Clearing the floats -->
+	</div>

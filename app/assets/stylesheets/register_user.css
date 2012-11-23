@@ -1,0 +1,251 @@
+/* BEGIN New styles for register user page */
+#connect_button {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-image: url(/admin/images/google_button.png);
+	border: 1px solid #BBB;
+	font-size: 108%;
+	margin: 24px 0 0 15px;
+	padding: 9px;
+}
+
+#maincontentin_register .box {
+	background-color: #eef2f5;
+	padding: 7px 0 7px 18px;
+}
+
+#maincontentin_register .box .title {
+	margin: 4px 0 4px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#maincontentin_register .box .description {
+	font-size: 12px;
+	line-height: 18px;
+	padding-bottom: 1px;
+	padding-right: 24px;
+}
+
+#maincontentin_register .special_box {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	width: 431px;
+	float: left;
+	margin: 0 0 4px;
+	background-color: #CDD4DE;
+	padding: 4px;
+	border: 2px solid #CDD4DE;
+}
+
+#maincontentin_register .error {
+	background-color: #f9D8C5 !important;
+	border: 2px solid #f4B089;
+}
+
+#maincontentin_register .error_message {
+	display: none;
+	font-weight: bold;
+	text-align: right;
+	padding: 7px 0 0;
+	color: #C14708;
+	font-size: 11px;
+	width: 440px;
+}
+
+#maincontentin_register .bubble {
+	display: none;
+	position: absolute;
+}
+
+#maincontentin_register .bubble img {
+	margin-top: 15px;
+	float: left;
+}
+
+#maincontentin_register .bubble .right {
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius: 7px;
+	background-color: #1f304c;
+	padding: 10px 14px;
+	width: 175px;
+	margin-left: 8px;
+	color: #D8DEF8;
+	font-size: 11px;
+}
+
+#maincontentin_register .bubble .right .title {
+	color:#FFFFFF;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+#maincontentin_register .error_icon {
+	margin-left: 5px;
+	display: none;
+}
+
+#maincontentin_register .box .loading, #maincontentin_register .box .result {
+	margin: 12px 0 0 5px;
+	display: none;
+}
+
+#maincontentin_register .box .loading {
+	margin: 8px 0 0 2px !important;
+}
+
+#maincontentin_register .special_box input {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	font-size:16px;
+	padding: 4px 8px;
+	width: 263px;
+	background-color: #FFFFFF;
+	border: none;
+}
+
+#maincontentin_register .special_box input.gray {
+	color: #C1C6D0;
+}
+
+#maincontentin_register .special_box label {
+	float: left;
+	font-size:12px;
+	font-weight: bold;
+	width: 134px;
+	padding: 4px 5px;
+	text-align: right;
+}
+
+#maincontentin_register .small_description {
+	clear: left;
+	color: #777777;
+	font-size: 10px;
+	margin-top: 4px;
+	margin-left: 152px;	
+}
+
+#maincontentin_register .dark.box {
+	background-color: #dadde3;
+}
+
+#maincontentin_register .google_caps {
+font-size:11px;
+margin-top:7px;
+}
+
+#maincontentin_register .google_icon {
+	float: left;
+	margin-right: 5px;
+}
+
+#connect_button {
+	padding: 9px;
+	margin: 0 !important;
+}
+
+#connect_button:hover {
+	cursor: pointer;
+}
+
+#maincontentin_register .google_box_desc {
+	clear: left;
+	margin-top: 15px;
+}
+
+#maincontentin_register .google_title {
+font-weight:bold;
+}
+
+#maincontentin_register .google_text {
+font-size:12px;
+padding: 5px;
+margin-right: 40px;
+float: left;
+}
+
+#email_box, #connect_box {
+	margin-top: 25px;
+}
+
+#maincontentin_register .main_label {
+	float: left;
+	font-weight: bold;
+	width: 138px;
+	padding: 9px 6px;
+	text-align: right;
+}
+
+#maincontentin_register .main_input {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background-color: #FFFFFF;
+	border-color: #888888 #CCCCCC #DDDDDD;
+	border-style: solid;
+	border-width: 1px;
+	color: #333333;
+	font-size: 16px;
+	padding: 5px 6px;
+	width: 275px;
+}
+
+#maincontentin_register .main_input:focus {
+	background-color: #DAE1E7;
+	border-color: #888888 #CCCCCC #F8FAFC;
+}
+
+#maincontentin_register .name_table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#maincontentin_register .name_table td input {
+	width: 122px;
+}
+
+#maincontentin_register .name_table .small_description {
+	margin-left: 0;
+}
+
+#maincontentin_register .box .select {
+	width: 290px;
+	margin: 7px 0;
+}
+
+#maincontentin_register .white_box {
+	font-size: 10px;
+	padding-left: 155px;
+	padding-top: 11px;
+}
+
+#maincontentin_register .white_box span.accept_error_message {
+	padding-left: 42px;
+	color: #C14708;
+	font-weight: bold;	
+}
+
+#maincontentin_register .submit_button_continue {
+	margin-top: 15px;
+	height: 49px;
+	width: 142px;
+}
+
+#maincontentin_register .submit_button_create {
+	margin-top: 15px;
+	height: 49px;
+	width: 225px;
+}
+
+#maincontentin_register .submit_button:hover {
+	background-position: 0 -49px;
+	cursor: pointer;
+}
+/* END New styles for register user page */

@@ -1,0 +1,267 @@
+#content {
+	padding-top: 35px;
+	height:380px;
+}
+#content #col_1 {
+background-color:#FFFFFF;
+color:#333333;
+float:left;
+font-family:'Lucida Grande',Arial,'Lucida Sans','DejaVu Sans Condensed',sans-serif;
+margin-right:60px;
+width:330px;
+}
+#content #col_2 {
+background-color:#FFFFFF;
+color:#333333;
+float:left;
+font-family:'Lucida Grande',Arial,'Lucida Sans','DejaVu Sans Condensed',sans-serif;
+width:330px;
+}
+#content a {
+font-size:10px;
+text-decoration:none;
+}
+#content p {
+font-family:'Lucida Grande',Arial,'Lucida Sans','DejaVu Sans Condensed',sans-serif;
+font-size:12px !important;
+margin-top:10px !important;
+text-decoration:none;
+}
+h3 {
+	/*font-size:17px;*/
+	/*margin-bottom:19px;*/
+	border-top: none;
+}
+
+h3 .error_highlight_arrow{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 22px;
+	background:transparent url(../images/error_highlight_arrow.png) no-repeat scroll left center;
+}
+
+.bluebox {
+background-color:#EFF0F4;
+padding:16px 24px;
+height:auto !important;
+height:170px;
+min-height:170px;
+}
+.bluebox.highlighted {
+	background: #DAE7FA; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaedef', endColorstr='#cfd9e2'); /* for IE */
+	background: -moz-linear-gradient(center top , #eaedef, #cfd9e2) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear,left top, left bottom, from(#eaedef), to(#cfd9e2)); /* for webkit browsers */
+	
+	border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    -moz-box-shadow: 0px 1px 2px #71777F;
+	-webkit-box-shadow: 0px 1px 2px #71777F;
+	box-shadow: 0px 1px 2px #71777F;
+}
+.bluebox p {
+font-size:12px;
+line-height:18px;
+margin-top:10px;
+}
+.email {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	
+/*	background:transparent url(../images/inside_email.png) no-repeat scroll 0 0;*/
+	border: 1px solid #C1C6D0;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+	
+	clear:left;
+	color:#C1C6D0;
+	font-size:18px;
+	height:29px;
+	margin:10px 0 5px;
+	padding-left:7px;
+	padding-top:4px;
+	width:275px;
+}
+.password {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	
+/*	background:transparent url(../images/inside_password.png) no-repeat scroll 0 0;*/
+	border: 1px solid #C1C6D0;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    
+	clear:left;
+	color:#C1C6D0;
+	font-size:18px;
+	height:29px;
+	margin:8px 0;
+	padding-left:6px;
+	padding-top:4px;
+	width:275px;
+}
+.gmail {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	
+	/*background:transparent url(../images/signup_gmail_input.png) no-repeat scroll 0 0;*/
+	border: 1px solid #C1C6D0;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+	clear:left;
+	color:#C1C6D0;
+	font-size:18px;
+	height:29px;
+	margin:13px 0;
+	padding-left:7px;
+	padding-top:4px;
+	width:275px;
+}
+.bluebox input:focus {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+    border-color: #B2B2B2;
+    color: #333333;
+}
+.highlighted .email, .highlighted .password, .highlighted .gmail {
+	color: #333333;
+}
+.submit_buttons {
+	-moz-border-radius-bottomleft:6px;
+	-moz-border-radius-bottomright:6px;
+	-moz-border-radius-topleft:6px;
+	-moz-border-radius-topright:6px;
+	background-color:#4D4D4D;
+	border:medium none;
+	clear:left;
+	color:#FFFFFF;
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	margin:10px 0;
+	padding:4px;
+	cursor:pointer;
+}
+.submit_buttons:hover {
+background-color:#3D3D3D;
+}
+.active_button, .submit_buttons:active {
+	background-color:#4d4d4d;
+	color:#D6D6D6;
+}
+.request_button {
+width:124px;
+}
+.login_button {
+	width:53px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.send_button {
+width:52px;
+}
+#successbox {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#E6F5CD url(../images/inside_signup_success.png) no-repeat scroll 24px 24px;
+color:#555555;
+font-size:12px;
+font-weight:bold;
+line-height:15px;
+margin:0;
+padding:24px 24px 24px 64px;
+}
+.errorbox {
+background-color:#FAD8C5 !important;
+font-size:11px;
+}
+#orchant_error1, #orchant_error2 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(../images/red-x-error-icon.png) no-repeat scroll 0 0;
+font-size:11px;
+line-height:14px;
+margin-bottom:10px;
+padding:0 0 0 19px;
+}
+#orchant_error2 {
+clear:both;
+}
+#checkbox_area {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(../images/inside_signup_checkbox_area.png) no-repeat scroll 0 0;
+float:left;
+height:26px;
+margin:10px;
+width:140px;
+}
+#checkbox_area a {
+text-decoration:none;
+}
+#yesCheckbox {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(../images/inside_signup_checkbox_x.png) no-repeat scroll -9999px -9999px;
+float:left;
+height:26px;
+width:57px;
+}
+#noCheckbox {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(../images/inside_signup_checkbox_x.png) no-repeat scroll -9999px -9999px;
+float:left;
+height:26px;
+margin-left:20px;
+width:57px;
+}
+#yesCheckbox.checked {
+background-position:8px 9px !important;
+}
+#noCheckbox.checked {
+background-position:11px 8px !important;
+}
+#request_update {
+clear:none;
+}
+
+#connect_button
+{
+background-image: url(../images/google_button.png);
+font-size:14px;
+padding:7px;
+border: 1px solid #BBBBBB;
+-moz-border-radius: 4px;
+}
+#connect_button img {
+margin-right:7px;
+}
+#google_login_form {
+margin:5px 0;
+}
+#login_error {
+	background-color: #FFF3C5;
+	border-bottom: 12px solid white;
+	padding: 16px;
+}
